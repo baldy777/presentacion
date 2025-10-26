@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BDFG</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Menú fijo -->
+    <nav class="menu-fijo">
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre-nosotros">Sobre Nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#portafolio">Portafolio</a>
+      <a href="#mantenimiento">Mantenimiento</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- Hero / Primera Sección -->
+    <section id="inicio" class="primera-seccion">
+      <div class="contenedor">
+        <h1>BDFG</h1>
+        <p>Desarrollo de páginas web, aplicaciones y más</p>
+        <div class="accion">
+          <a href="#contacto">Contáctanos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section id="sobre-nosotros" class="seccion seccion-sobre-nosotros">
+      <div class="contenedor">
+        <h2>Sobre Nosotros</h2>
+        <p>
+          Somos una empresa dedicada al desarrollo de soluciones digitales,
+          desde páginas web hasta aplicaciones móviles y diseño gráfico. Nuestro
+          objetivo es ayudarte a materializar tus ideas en productos funcionales
+          y atractivos.
+        </p>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="seccion seccion-servicios">
+      <div class="contenedor">
+        <h2>Categorías de Servicios</h2>
+        <div class="servicios-seccion">
+          <div class="articulo-seccion">
+            <h3>Desarrollo web</h3>
+            <p>
+              Páginas web estáticas y dinámicas adaptadas a tus necesidades.
+            </p>
+          </div>
+          <div class="servicios-seccion">
+          <div class="articulo-seccion">
+            <h3>Regalos digitales</h3>
+            <p>
+                Creación de tarjetas digitales personalizadas para cualquier ocasión.
+            </p>
+          </div>
+          <div class="articulo-seccion">
+            <h3>Servicios técnicos</h3>
+            <p>Mantenimiento y soporte de equipos de escritorio.</p>
+          </div>
+          <div class="articulo-seccion">
+            <h3>Aplicaciones móviles</h3>
+            <p>Desarrollo de apps móviles para Android.</p>
+          </div>
+          <div class="articulo-seccion">
+            <h3>Diseño y modelación</h3>
+            <p>Diseño gráfico y modelación para todo tipo de contenido.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portafolio -->
+    <section id="portafolio" class="seccion seccion-portafolio">
+      <div class="contenedor">
+        <h2>Proyectos Destacados</h2>
+        <div class="proyectos">
+          <div class="proyecto">
+            <h3>Proyecto 1</h3>
+            <p>Desarrollo de página web para empresa de servicios.</p>
+          </div>
+          <div class="proyecto">
+            <h3>Proyecto 2</h3>
+            <p>Aplicación móvil para gestión de clientes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mantenimiento -->
+    <section id="mantenimiento" class="seccion seccion-mantenimiento">
+      <div class="contenedor">
+        <h2>Mantenimiento y Soporte</h2>
+        <p>
+          Ofrecemos soporte continuo y mantenimiento de tus sistemas y páginas
+          web, asegurando que todo funcione de manera óptima y segura.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="seccion seccion-contacto">
+      <div class="contenedor">
+        <h2>Contacto</h2>
+        <p>
+          Si estás interesado en alguno de nuestros servicios, completa el
+          formulario y nos pondremos en contacto contigo.
+        </p>
+        <form action="https://formspree.io/f/tu_form_id" method="POST">
+          <input type="text" name="name" placeholder="Nombre" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Correo electrónico"
+            required
+          />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Tu mensaje"
+            required
+          ></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

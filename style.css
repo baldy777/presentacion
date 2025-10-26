@@ -1,0 +1,174 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 100px 20px 60px;
+}
+
+/* Menú fijo */
+.menu-fijo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px 0;
+  z-index: 1000;
+}
+
+.menu-fijo a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu-fijo a:hover {
+  color: #ffcc00;
+}
+
+/* Hero */
+.primera-seccion {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding-top: 150px; /* extra para menú fijo */
+}
+
+.primera-seccion h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.primera-seccion p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.primera-seccion .accion a {
+  background-color: white;
+  color: #007bff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.primera-seccion .accion a:hover {
+  background-color: #e6e6e6;
+}
+
+/* Secciones */
+.seccion {
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+p {
+  font-size: 18px;
+}
+
+/* Servicios */
+.servicios-seccion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.articulo-seccion {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.articulo-seccion:hover {
+  transform: scale(1.05);
+}
+
+/* Portafolio */
+.proyectos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.proyecto {
+  background-color: #f9f9f9;
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+}
+
+/* Contacto */
+.seccion-contacto form {
+  max-width: 500px;
+  margin: 20px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.seccion-contacto input,
+.seccion-contacto textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.seccion-contacto button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.seccion-contacto button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .articulo-seccion,
+  .proyecto {
+    width: 100%;
+  }
+
+  .primera-seccion h1 {
+    font-size: 36px;
+  }
+
+  .primera-seccion p {
+    font-size: 18px;
+  }
+}
